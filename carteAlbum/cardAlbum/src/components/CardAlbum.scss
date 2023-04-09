@@ -1,0 +1,221 @@
+
+
+
+
+
+// Couleurs
+$spotify-green: #1DB954;
+$spotify-dark: #191414;
+$spotify-gray: #B3B3B3;
+
+// Styles pour la liste d'artistes
+.artistes-list {
+  background-color: $spotify-dark;
+  color: $spotify-gray;
+  padding: 20px;
+
+
+  h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+
+    margin-bottom: 20px;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+
+   
+
+    li {
+      margin-bottom: 20px;
+     
+      
+      padding-right: 10px;
+
+      
+
+    }
+      
+      h3 {
+        color: $spotify-green;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin: 0;
+        font-size: 1.2rem;
+
+        &:first-of-type {
+          font-weight: bold;
+        }
+
+        &:last-of-type {
+          margin-top: 5px;
+        }
+      }
+
+      img {
+        display: block;
+        
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        
+      }
+    }
+  }
+
+  
+
+.artiste-card {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  margin-bottom: 2em;
+  margin-right: 2em;
+  margin-left: 6em;
+  width: 40%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+  
+
+  
+
+}
+
+.artiste-card-image {
+  flex: 0 0 200px;
+  height: 100%;
+  overflow: hidden;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  flex-wrap: wrap;
+  
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.artiste-card-details {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Nouvelle propriété ajoutée */
+  padding-left: 1em;
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1.2rem;
+
+    &:first-of-type {
+      font-weight: bold;
+    }
+
+    &:last-of-type {
+      margin-top: 5px;
+    }
+  }
+}
+
+
+.artiste-cards{
+  display: flex;
+  width: 100%;
+  
+  flex-direction: row;
+  flex-wrap: wrap;
+
+
+}
+
+.button-youtube {
+  button {
+    background-color: $spotify-green;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    float: right;
+
+    &:hover {
+      background-color: #85dba3;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 5px #85dba3;
+    }
+  }
+}
+
+
+
+.buttonFiltres {
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  float: left;
+  padding-left: 5em;
+  
+
+
+  
+  
+  .buttonFiltres-container {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+    padding: 0.5rem 1rem;
+    display: inline-flex;
+    transition: background-color 0.3s ease;
+    margin: 1em;
+
+
+    button {
+      font-size: 1rem;
+      color: #333;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      transition: color 0.3s ease;
+
+
+    }
+
+    &.active {
+      background-color: $spotify-green;
+
+      button {
+        color: #fff;
+
+        &:hover {
+          color: $spotify-green;
+        }
+      }
+    }
+  }
+}
